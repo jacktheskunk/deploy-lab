@@ -5,7 +5,7 @@ services:
     image: jacktheskunk/app-frontend:null
     # build: ./frontend  # decommenta se vuoi buildare l’immagine localmente
     ports:
-      - "8081:80"  # porta host 8081 per il frontend
+      - "80:80"  # porta host 8081 per il frontend
 
 
 
