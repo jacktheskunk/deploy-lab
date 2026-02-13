@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  backend:
+    image: jacktheskunk/app-backend:main
+    container_name: lab-backend
+    ports:
+      - "5000:5000"
+
+  frontend:
+    image: jacktheskunk/app-frontend:main
+    container_name: lab-frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
