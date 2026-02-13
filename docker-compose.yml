@@ -6,10 +6,10 @@ services:
     # build: ./frontend  # decommenta se vuoi buildare l’immagine localmente
     ports:
       - "8081:80"  # porta host 8081 per il frontend
-    depends_on:
-      - backend
-    environment:
-      - BACKEND_URL=http://backend:5000
+
+
+
+
 
   backend:
     image: jacktheskunk/app-backend:null
